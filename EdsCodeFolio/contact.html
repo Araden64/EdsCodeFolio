@@ -1,0 +1,135 @@
+<!--==========================================================-->
+<!--Course:     CSC 3750-->
+<!--Assignment: Final Project-->
+<!--Author:     Edward Sana-->
+<!--Date:       7-28-2021-->
+<!--==========================================================-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ed's CodeFolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+
+    <!--Style for the webpage is a dark mode style-->
+    <style>
+        @import url("styles.css");
+    </style>
+</head>
+
+<!--This is where the body of the website starts-->
+
+<body id="contact">
+    <div id="container">
+        <header>
+            <div class="logo">
+                <img src="assets/img/logo/logo.svg" alt="Ed's CodeFolio">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="organizations.html" class="nav__link">Organizations</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="title">
+            <h1 class="section__subtitle section__subtitle--intro">Contact Me</h1>
+        </section>
+
+        <main>
+            <section id="form">
+                <h2>Email Form</h2>
+
+                <p>Feel free to contact me by email.</p>
+
+                <!--Start of the form to send an email-->
+                <form action="mailto:admin@Edscodefolio.com" method="post" enctype="text/plain">
+                    <fieldset>
+
+                        <!--Nested fieldset for identifying sender-->
+                        <fieldset>
+
+                            <!--This fieldset involves using radio buttons to make only one selection-->
+                            <legend>Which option best describes you?<em>(Choose one)</em>:</legend>
+                            <ul>
+                                <li><label><input type="radio" name="identity" value="employer"> An Employer</label>
+                                </li>
+                                <li><label><input type="radio" name="identity" value="business_owner"> Business
+                                        Owner</label></li>
+                                <li><label><input type="radio" name="identity" value="startup"> A Startup</label></li>
+                                <li><label><input type="radio" name="identity" value="individual"> An individual</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <!--Nested fieldset for choosing a coding language-->
+                        <fieldset>
+                            <!--This fieldset invovles using a checkbox to choose multiple options-->
+                            <legend>What languages would you like me to code in? <em>(Choose as many as you want)</em>:
+                            </legend>
+                            <ul>
+                                <li><label><input type="checkbox" name="lang" value="C++" checked> C++</label>
+                                </li>
+                                <li><label><input type="checkbox" name="lang" value="Python"> Python</label>
+                                </li>
+                                <li><label><input type="checkbox" name="lang" value="Java"> Java</label></li>
+                            </ul>
+                        </fieldset>
+
+                        <!--Nested fieldset for writing the email-->
+                        <fieldset>
+                            <legend>Your Information:</legend>
+                            <ul>
+                                <li><label for="form-name">Name:</label><br>
+                                    <input type="text" name="name" id="form-name">
+                                </li>
+                                <li><label for="form-subject">Company:</label><br>
+                                    <input type="text" name="subject" id="form-subject">
+                                </li>
+
+                                <li><label for="form-email">Email:</label><br>
+                                    <input type="email" name="email" id="form-email"></label>
+                                </li>
+                                <li>Enter your comments:<br>
+                                    <textarea name="comments" rows="15" cols="100" maxlength="1000" id="form-story"
+                                        placeholder="No more than 1000 characters long"></textarea>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                    </fieldset>
+
+                    <!--Send and reset buttons-->
+                    <p><input type="submit" value="Send"> <input type="reset" value="Reset"></p>
+                </form>
+
+
+            </section>
+    </div>
+
+    <!--Website footer, includes navigation and copyright-->
+    <footer>
+        <hr>
+        <!--Website navigation bar-->
+        <nav>
+        </nav>
+
+        <!--Copyright message-->
+        <p class="copyright">Website Copyright &copy; 2021, Edward Sana</p>
+    </footer>
+    </div>
+</body>
+
+</html>

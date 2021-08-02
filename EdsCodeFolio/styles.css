@@ -1,0 +1,472 @@
+/*==========================================================*/
+/*Course:     CSC 3750*/
+/*Assignment: Final Project*/
+/*Author:     Edward Sana*/
+/*Date:       7-28-2021*/
+/*==========================================================*/
+        
+/* Imports the font style sheet from google for the Anton, Roboto and Orbitron fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@800&display=swap');
+
+/* HTML Style */
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+/* Body Style */
+body {
+    background-color: #292828;
+    background-position: center top;
+    margin: 0;
+    font-size: 100%;
+    font-family: "roboto", sans-serif
+}
+
+
+/* Header Styles */
+header {
+    color: white;
+    background: url(assets/img/banners/banner.png) no-repeat center;
+    background-size: cover; 
+    text-align: center;
+    height: 15em;
+}
+header h1 {
+    margin-top: 1.5em;
+}
+header p {
+    display: none;
+}
+header img {
+    float: right;    
+    margin: auto auto auto auto;
+    width: 60%;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+}
+a:link,
+a:visited {
+    color:gainsboro;
+}
+a:focus,
+a:hover {
+    color: #000000;
+    background-color: #fff;
+}
+a:active {
+    color: rgb(255, 217, 0);
+    background-color: rgba(255, 255, 255, 0.39);
+}
+
+nav {
+    padding: .5em;
+    text-align: center;
+}
+nav ul li a:focus,
+nav ul li a:hover,
+nav ul li a:active {
+    color: #000000;
+    background-color: rgb(62, 102, 102);
+}
+nav ul li a:active {
+    color: rgb(255, 217, 0);
+    background-color: rgba(255, 255, 255, 0.39);
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+nav ul li {
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    flex: 1 1 50%;
+}
+nav ul li a {
+    display: block; 	
+    border: 1px solid;
+    border-color: darkslategrey;
+    background-color: darkslategrey; 
+    padding: .5em 1em; 	
+    border-radius: .5em; 
+    margin: .25em; 
+}
+
+/* Syle for the main section */
+main {
+    margin: .5em 1em;
+    padding: .5em 1em;
+}
+main p{
+    font-size: 1.25em;
+}
+
+
+/* Style for aside section */
+aside {
+}
+
+/* Style for h1 */
+h1 {
+    font-family: "Open sans", sans-serif;
+    text-align: center;
+    font-weight: normal;
+    color:darkgrey;
+    text-shadow: 2px 2px 5px #727272e0;
+    text-transform: uppercase;
+    margin: .25em .25em;
+}
+
+/* Style for h2 */
+h2 {
+    font-family: "Open sans", sans-serif;
+    text-align: center;
+    font-weight: normal;
+    color:darkgrey;
+    text-shadow: 2px 2px 5px #727272e0;
+    text-transform: uppercase;
+    margin: .25em .25em;
+}
+
+/* Style for h3 */
+h3 {
+    font-family: "Open sans", sans-serif;
+    text-align: center;
+    font-weight: normal;
+    color:darkgrey;
+    text-shadow: 2px 2px 5px #727272e0;
+    text-transform: uppercase;
+    margin: .25em .25em;
+}
+
+/* Style for h4 */
+h4 {
+}
+
+/* Style for horizontal rule */
+hr {
+}
+
+/* Style for paragraphs */
+p {
+    font-family: "lato", sans-serif;
+    text-align: left;
+    font-weight: normal;
+    color:darkgrey;
+}
+
+/* Style for detailed lists */
+dl {
+}
+
+/* Style for unordered lists */
+ul {
+    color:darkgrey;
+}
+
+/* Style for images */
+img {
+    width: 100%;
+}
+
+/* Style for tables */
+table, th, td {
+}
+
+/* Style for .center */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+
+/* Style for the legend */
+legend {
+    color:darkgrey;
+}
+
+/* Style for text area */
+textarea {
+    width: 100%;
+}
+
+/* Style for strong */
+strong {
+    color:gainsboro;
+}
+
+/* Style for paragraphs in the disclaimer class */
+#disclaimer p {
+}
+
+.mylinks {
+    padding: 3em 0em 1em 0em;
+    margin: 3em 0em 1em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mylinks a:focus,
+.mylinks a:hover,
+.mylinks a:active {
+    color: #000000;
+    background-color: rgb(62, 102, 102);
+}
+.mylinks a:active {
+    color: rgb(255, 217, 0);
+    background-color: rgba(255, 255, 255, 0.39);
+}
+.mylinks a {
+    border: 1px solid;
+    border-color: darkslategrey;
+    background-color: darkslategrey; 
+    padding: .5em .5em; 
+    margin: .25em;
+}
+
+.codeLang ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.codeLang li {
+    font-family: "lato", sans-serif;
+    text-align: left;
+    font-weight: normal;
+    color:darkgrey;
+    border: 3px solid;
+    border-color: rgb(68, 116, 116);
+    background-color: darkslategrey; 
+    padding: .5em .5em; 
+    margin: .25em;
+    list-style-type: none;
+}
+
+.description li {
+    font-family: "lato", sans-serif;
+    text-align: left;
+    font-weight: normal;
+    color:darkgrey;
+    list-style-type: square;
+}
+
+/* Style for paragraphs in the copyright class */
+p.copyright {
+    margin-right: 1em;
+    text-align: right;
+    font-size: small;
+}
+
+/* Style for the footer tags */
+footer {
+}
+
+/* Style for video */
+video {
+}
+
+/* Style for the screen widths at least 300px */
+@media screen and (min-width: 320px) {
+/* Header Styles */
+header {
+    background-color: rgb(0, 0, 0);
+    background: url(assets/img/banners/banner-480.png) no-repeat top;
+    background-size: cover; 
+    text-align: center;
+    height: 15em;
+    padding: 1em;
+}
+header h1 {
+    margin-top: 1.5em;
+}
+header p {
+    display: none;
+}
+header img {
+    padding: 1em 1em 1em 1em;
+    margin-top: 4em;
+    width: 100%;
+    background-color: black;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1em;
+}
+}
+
+/* Style for screen widths at least 480px */
+@media screen and (min-width: 480px) {
+    /* Header Styles */
+    header {
+        background-color: rgb(0, 0, 0);
+        background: url(assets/img/banners/banner-600.png) no-repeat top;
+        background-size: cover; 
+        text-align: center;
+        height: 15em;
+        padding: 1em;
+    }
+    header h1 {
+        margin-top: 1.5em;
+    }
+    header p {
+        display: none;
+    }
+    header img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Style for screen widths at least 600px */
+@media screen and (min-width: 600px) {
+    /* Header Styles */
+    header {
+        background-color: rgb(0, 0, 0);
+        background: url(assets/img/banners/banner-940.png) no-repeat top;
+        background-size: cover; 
+        text-align: center;
+        height: 15em;
+        padding: 1em;
+    }
+    header h1 {
+        margin-top: 1.5em;
+    }
+    header p {
+        display: none;
+    }
+    header img {
+        width: 65%;
+        background-color: transparent;
+        float: right; 
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+/* Style for screen widths at least 940px */
+@media screen and (min-width: 940px) {
+    #home #container {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: minmax(25em, 1fr);
+        grid-template-areas:
+            "banner"
+            "navigation"
+            "title"
+            "main"
+            "footer";
+        max-width: 1500px;
+        margin: auto auto;
+        position: relative;
+    }
+    
+    #projects #container {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-areas:
+            "banner banner banner"
+            "navigation navigation navigation"
+            "title title title"
+            "project1 project2 project3"
+            "footer footer footer";
+        max-width: 1500px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #contact #container {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: minmax(25em, 1fr);
+        grid-template-areas:
+            "banner"
+            "navigation"
+            "title"
+            "main"
+            "footer";
+        max-width: 1500px;
+        margin: auto auto;
+        position: relative;
+    }
+
+    header {
+        grid-area: banner;
+        color: white;
+        background: url(assets/img/banners/banner.png) no-repeat center;
+        background-size: cover; 
+        text-align: center;
+        height: 15em;
+    }
+    header h1 {
+        margin-top: 1.5em;
+    }
+    header p {
+        display: none;
+    }
+
+    nav {
+        grid-area: navigation;
+    }
+    .title {
+        grid-area: title;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
+    .project1 {
+        grid-area: project1;
+    }
+    .project2 {
+        grid-area: project2;
+    }
+    .project3 {
+        grid-area: project3;
+    }
+    aside p {
+        font-size: 1em;
+    }
+}
